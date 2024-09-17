@@ -1,9 +1,8 @@
-
 package com;
 
-import com.geometry.Circle;
-import com.geometry.Rectangle;
-import com.geometry.Triangle;
+import geometry.Circle;
+import geometry.Rectangle;
+import geometry.Triangle;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +17,12 @@ public class Main {
         Triangle triangle = new Triangle(3, 4, 5);
         System.out.println("Triangle area: " + triangle.area());
         System.out.println("Triangle perimeter: " + triangle.perimeter());
+
+        System.out.println(GeometryUtils.convertToMeters(4.655)+" sm");
+        System.out.println(GeometryUtils.compareAreas(24.543, 22.441));
+
+
+
+
     }
 }
